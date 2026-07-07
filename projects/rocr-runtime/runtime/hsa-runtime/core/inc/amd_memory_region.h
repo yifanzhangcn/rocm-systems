@@ -72,7 +72,7 @@ class MemoryRegion : public core::MemoryRegion {
     return region_handle;
   }
 
-  /// @brief  Convert hsa_region_t into AMD::MemoryRegion *.
+  /// @brief  Convert    hsa_region_t into AMD::MemoryRegion *.
   static __forceinline MemoryRegion* Convert(hsa_region_t region) {
     return reinterpret_cast<MemoryRegion*>(region.handle);
   }
